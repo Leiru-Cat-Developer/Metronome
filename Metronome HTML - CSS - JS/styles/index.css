@@ -1,0 +1,88 @@
+body {
+  font-family: Arial;
+}
+
+p,
+.title-text {
+  text-align: center;
+}
+
+p {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.metronome-dot-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.metronome-dot {
+  width: 40px;
+  height: 40px;
+  margin: 10px;
+  border: none;
+  border-radius: 100%;
+  background-color: darkblue;
+}
+
+.compass-button,
+.start-bpm-button,
+.play-sound-effect-button {
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-weight: bold;
+  background-color: darkblue;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.start-bpm-button:hover,
+.compass-button:hover,
+.play-sound-effect-button:hover {
+  background-color: rgb(0, 0, 203);
+}
+
+.start-bpm-button:active,
+.compass-button:active,
+.play-sound-effect-button:active {
+  color: black;
+  background-color: lightgray;
+}
+
+.metronome-bpm-input,
+.metronome-sound,
+.timer-input {
+  font-size: 16px;
+  padding: 10px;
+  border: solid;
+  border-radius: 30px;
+}
+
+.metronome-start-container,
+.metronome-compass-container,
+.metronome-sound-effect-container,
+.metronome-timer-container {
+  display: grid;
+  gap: 15px;
+  justify-content: center;
+  margin: 20px 0px 20px 0px;
+}
+
+.metronome-start-container {
+  grid-template-columns: 50px 200px 100px;
+}
+
+.metronome-compass-container {
+  grid-template-columns: 150px 70px 70px 70px 70px;
+}
+
+.metronome-sound-effect-container {
+  grid-template-columns: 180px 200px 100px;
+}
+
+.metronome-timer-container {
+  grid-template-columns: 60px 200px;
+}

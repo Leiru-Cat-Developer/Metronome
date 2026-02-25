@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+  <head>
+    <title></title>
+    <link rel="stylesheet" href="styles/index.css" />
+  </head>
+  <body>
+    <h1 class="title-text">METRONOME</h1>
+
+    <div class="metronome-dot-container">
+      <div class="metronome-dot"></div>
+      <div class="metronome-dot"></div>
+      <div class="metronome-dot"></div>
+      <div class="metronome-dot"></div>
+    </div>
+
+    <div class="metronome-start-container">
+      <p>BPM</p>
+      <input placeholder="Write BPM" class="metronome-bpm-input""/>
+      <button class="start-bpm-button">Start</button>
+    </div>
+
+    <div class="metronome-compass-container">
+      <p>Select compass:</p>
+      <button class="compass-button">4/4</button>
+      <button class="compass-button">3/4</button>
+      <button class="compass-button">12/8</button>
+      <button class="compass-button">6/8</button>
+    </div>
+    
+    <div class="metronome-sound-effect-container">
+      <p>Metronome Sound:</p>
+      <select class="metronome-sound">
+        <option>Default</option>
+        <option>Softer</option>
+        <option>Wood</option>
+      </select>
+      <button class="play-sound-effect-button">Play Effect</button>
+    </div>
+
+    <div class="metronome-timer-container">
+      <p>Timer</p>
+      <input placeholder="Write time" class="timer-input"/>
+    </div>
+    <script src="scripts/index.js"></script>
+  </body>
+</html>
