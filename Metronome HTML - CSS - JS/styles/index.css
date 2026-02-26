@@ -39,17 +39,9 @@ p {
   transition: background-color 0.2s ease;
 }
 
-.start-bpm-button:hover,
-.compass-button:hover,
-.play-sound-effect-button:hover {
-  background-color: rgb(0, 0, 203);
-}
-
-.start-bpm-button:active,
-.compass-button:active,
-.play-sound-effect-button:active {
-  color: black;
-  background-color: lightgray;
+.js-is-toggled {
+  color: white;
+  background-color: red;
 }
 
 .metronome-bpm-input,
