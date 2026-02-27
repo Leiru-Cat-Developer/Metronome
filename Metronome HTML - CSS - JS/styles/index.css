@@ -36,8 +36,26 @@ p {
   font-weight: bold;
   background-color: darkblue;
   cursor: pointer;
-  transition: background-color 0.2s ease;
 }
+
+.start-bpm-button,
+.play-sound-effect-button {
+  transition: background 0.5s ease;
+}
+
+.start-bpm-button:hover,
+.play-sound-effect-button:hover {
+  background-color: rgb(0, 0, 200);
+}
+
+.start-bpm-button {
+  max-height: 50px;
+}
+
+/* .js-bpm-started {
+  color: white;
+  background-color: green;
+} */
 
 .js-is-toggled {
   color: white;
@@ -50,6 +68,7 @@ p {
   font-size: 16px;
   padding: 10px;
   border: solid;
+  border-width: 2px;
   border-radius: 30px;
 }
 
@@ -64,7 +83,7 @@ p {
 }
 
 .metronome-start-container {
-  grid-template-columns: 50px 200px 100px;
+  grid-template-columns: 100px 200px 100px;
 }
 
 .metronome-compass-container {
@@ -76,5 +95,18 @@ p {
 }
 
 .metronome-timer-container {
-  grid-template-columns: 60px 200px;
+  grid-template-columns: 60px 120px;
+}
+
+.metronome-bpm-values-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.warning-bpm-messages {
+  min-height: 30px;
+  margin: 5px 0px 0px 0px;
+  font-size: 12px;
+  font-weight: normal;
+  color: red;
 }
