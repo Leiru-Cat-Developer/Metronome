@@ -1,0 +1,21 @@
+.metronome-compass-container {
+  display: grid;
+  gap: 15px;
+  justify-content: center;
+  margin: 20px 0px 20px 0px;
+  grid-template-columns: 150px 70px 70px 70px 70px;
+}
+
+.compass-button {
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-weight: bold;
+  background-color: darkblue;
+  cursor: pointer;
+}
+
+.js-is-toggled {
+  color: white;
+  background-color: red;
+}

@@ -1,0 +1,29 @@
+.metronome-sound-effect-container {
+  display: grid;
+  gap: 15px;
+  justify-content: center;
+  margin: 20px 0px 20px 0px;
+  grid-template-columns: 180px 200px 100px;
+}
+
+.metronome-sound {
+  font-size: 16px;
+  padding: 10px;
+  border: solid;
+  border-width: 2px;
+  border-radius: 30px;
+}
+
+.play-sound-effect-button {
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-weight: bold;
+  background-color: darkblue;
+  cursor: pointer;
+  transition: background 0.5s ease;
+}
+
+.play-sound-effect-button:hover {
+  background-color: rgb(0, 0, 200);
+}

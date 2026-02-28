@@ -3,110 +3,11 @@ body {
 }
 
 p,
-.title-text {
+h1 {
   text-align: center;
 }
 
 p {
   font-size: 18px;
   font-weight: bold;
-}
-
-.metronome-dot-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-
-.metronome-dot {
-  width: 40px;
-  height: 40px;
-  margin: 10px;
-  border: none;
-  border-radius: 100%;
-  background-color: darkblue;
-}
-
-.compass-button,
-.start-bpm-button,
-.play-sound-effect-button {
-  border: none;
-  border-radius: 10px;
-  color: white;
-  font-weight: bold;
-  background-color: darkblue;
-  cursor: pointer;
-}
-
-.start-bpm-button,
-.play-sound-effect-button {
-  transition: background 0.5s ease;
-}
-
-.start-bpm-button:hover,
-.play-sound-effect-button:hover {
-  background-color: rgb(0, 0, 200);
-}
-
-.start-bpm-button {
-  max-height: 50px;
-}
-
-/* .js-bpm-started {
-  color: white;
-  background-color: green;
-} */
-
-.js-is-toggled {
-  color: white;
-  background-color: red;
-}
-
-.metronome-bpm-input,
-.metronome-sound,
-.timer-input {
-  font-size: 16px;
-  padding: 10px;
-  border: solid;
-  border-width: 2px;
-  border-radius: 30px;
-}
-
-.metronome-start-container,
-.metronome-compass-container,
-.metronome-sound-effect-container,
-.metronome-timer-container {
-  display: grid;
-  gap: 15px;
-  justify-content: center;
-  margin: 20px 0px 20px 0px;
-}
-
-.metronome-start-container {
-  grid-template-columns: 100px 200px 100px;
-}
-
-.metronome-compass-container {
-  grid-template-columns: 150px 70px 70px 70px 70px;
-}
-
-.metronome-sound-effect-container {
-  grid-template-columns: 180px 200px 100px;
-}
-
-.metronome-timer-container {
-  grid-template-columns: 60px 120px;
-}
-
-.metronome-bpm-values-container {
-  display: flex;
-  flex-direction: column;
-}
-
-.warning-bpm-messages {
-  min-height: 30px;
-  margin: 5px 0px 0px 0px;
-  font-size: 12px;
-  font-weight: normal;
-  color: red;
 }

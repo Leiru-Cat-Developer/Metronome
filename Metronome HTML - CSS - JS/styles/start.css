@@ -1,0 +1,43 @@
+.metronome-start-container {
+  display: grid;
+  gap: 15px;
+  justify-content: center;
+  margin: 20px 0px 20px 0px;
+  grid-template-columns: 100px 200px 100px;
+}
+
+.metronome-bpm-values-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.metronome-bpm-input {
+  font-size: 16px;
+  padding: 10px;
+  border: solid;
+  border-width: 2px;
+  border-radius: 30px;
+}
+
+.warning-bpm-messages {
+  min-height: 30px;
+  margin: 5px 0px 0px 0px;
+  font-size: 12px;
+  font-weight: normal;
+  color: red;
+}
+
+.start-bpm-button {
+  max-height: 50px;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-weight: bold;
+  background-color: darkblue;
+  cursor: pointer;
+  transition: background 0.5s ease;
+}
+
+.start-bpm-button:hover {
+  background-color: rgb(0, 0, 200);
+}

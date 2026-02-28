@@ -1,0 +1,15 @@
+.metronome-timer-container {
+  display: grid;
+  gap: 15px;
+  justify-content: center;
+  margin: 20px 0px 20px 0px;
+  grid-template-columns: 60px 120px;
+}
+
+.timer-input {
+  font-size: 16px;
+  padding: 10px;
+  border: solid;
+  border-width: 2px;
+  border-radius: 30px;
+}
