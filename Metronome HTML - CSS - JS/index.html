@@ -1,7 +1,8 @@
 <!doctype html>
 <html>
   <head>
-    <title></title>
+    <title>Metronome</title>
+
     <link rel="stylesheet" href="styles/index.css" />
     <link rel="stylesheet" href="styles/dot.css" />
     <link rel="stylesheet" href="styles/start.css" />
@@ -25,33 +26,30 @@
         <input placeholder="Write BPM" class="metronome-bpm-input" value="90" />
         <p class="warning-bpm-messages"></p>
       </div>
-      <button class="start-bpm-button" onclick="startMetronome()">Start</button>
+      <button class="start-bpm-button js-start-bpm-button">Start</button>
     </div>
 
     <div class="metronome-compass-container">
       <p>Select compass:</p>
       <button
         class="compass-button four-button"
-        onclick="handleToggleClass('four')"
+        onclick="handleCompass('four')"
       >
         4 / 4
       </button>
       <button
         class="compass-button three-button"
-        onclick="handleToggleClass('three')"
+        onclick="handleCompass('three')"
       >
         3 / 4
       </button>
       <button
         class="compass-button twelve-button"
-        onclick="handleToggleClass('twelve')"
+        onclick="handleCompass('twelve')"
       >
         12 / 8
       </button>
-      <button
-        class="compass-button six-button"
-        onclick="handleToggleClass('six')"
-      >
+      <button class="compass-button six-button" onclick="handleCompass('six')">
         6 / 8
       </button>
     </div>
@@ -70,6 +68,7 @@
       <p>Timer:</p>
       <input placeholder="Write time" class="timer-input" />
     </div>
+
     <script src="scripts/index.js"></script>
     <script src="scripts/start-functionality.js"></script>
     <script src="scripts/compass-functionality.js"></script>
